@@ -1,0 +1,80 @@
+React is a library
+-> framework vs library
+-> React is a SPA(Single Page Application it does not reload)
+
+# Topics to learn 
+- core of react (state or UI manipulation, JSX)
+- component reusability
+- Reusing of component (props)
+- how to propogate change (hooks)
+
+# Additional Addon to React
+- Router (React don't have Router)
+- State Management (React don't have state management)
+    -> Redux, Redux toolkit, Context API
+- class based component
+    -> legacy code
+- BAAS  Apps (eg. firebase, supabase)
+    -> social mdeia clone, e-commerce app ...
+
+# After React 
+-> React is not a complete solution in most case
+    -> NO SEO , browser Render of JS, no routing
+-> Framework: NEXT JS, GATSBY, REMIX
+
+
+React---> React-dom (for web)
+  |______> React-native (for mobile)
+
+abbreviations
+npm: node package manager (to install node packages)
+npx: node package executer (it executes without installing packages)
+
+npm (Node Package Manager):
+Used to install, update, and manage Node.js packages for a project or globally.
+It maintains dependencies using package.json and stores them in node_modules.
+
+npx (Node Package Executor):
+Used to run Node.js packages directly without installing them globally.
+It executes packages temporarily, making it ideal for one-time or CLI commands.
+
+1> Creating react with create-react-app 01basicreact (another way but its very bulky utility that's why we prefer vite)
+2> The starting reading point of react is the package.json file.
+3> see name of project, version, the dependencies are given and also testing libraries for testing purpose
+  - react scripts, web vitals for analyzing the performance
+  - scripts are the one that run project and make them ready
+  - eslint show more better
+4> npm run start will run the project (we can use directly npm start but their lies an exception so we prefer using npm run start)
+5> most of the time we will working in src so we can delete the files that are of no Use
+  - setupTest.js delete
+  - reportWebVitals.js
+  - other than app.js, index.js we can delete all the files
+  - now clean the App.js and index.js file removing the comments
+6> The js file will be injected into the html file , if not the js will not run, so why we can't see it injected cause in create-react-app 
+    -> react-script make inject the index.js , you can find the react-script in pkg and if you inspect the project after running you can see in src code that script is added.
+7> <App/> is not a defualt tag but but a cutom tag, so react allow us to create custom tag
+8> <React.StrictMode> <App /></React.StrictMode>
+    -> we can run even without strictmode (it is a safe mode)
+7> We create a component name nitin.js and export it to the App.js (we can create components other than App.js) 
+8> While creating Components , the file dosent need to have a first letter capital but the function inside it need to have a first letter capital 
+    -> eg. Filename: nitin.js , function name: function Nitin(){return(<h2>hi</h2>)}
+9> We can create a different component and export its function directly to the index.js or we can import it into another component. We can create multiple function in a component.
+   -> We can import component with different name from their function defined name and exported name until the first letter is capital.
+
+
+1> creating a project using vite (vite is a bundler)
+  - npm create vite@latest 
+  - npm i (for installing node_modules)
+2> clean the project 
+3> run the project using npm run dev (as in the package.json the dev is used for running the project)
+4> JS will be injected in the html file, in vite it is injected without injection the js will not work.
+5> <App/> is not a defualt tag but but a cutom tag, so react allow us to create custom tag
+    -> so what App is acutally, its a function that returns html and we exported it and we rendered the App function.
+6> <React.StrictMode> <App /></React.StrictMode>
+    -> we can run even without strictmode (it is a safemode)
+7> We create a component name nitin.jsx and export it to the App.jsx (we can create components other than App.jsx) 
+8> While creating Components , the file dosent need to have a first letter capital but the function inside it need to have a first letter capital 
+    -> eg. Filename: nitin.jsx , function name: function Nitin(){return(<h2>hi</h2>)}
+9> We can create a different component and export its function directly to the index.jsx or we can import it into another component. We can create multiple function in a component.
+   -> We can import component with different name from their function defined name and exported name until the first letter is capital.
+Resources for react project: 
