@@ -31,5 +31,3 @@ const root = document.querySelector('#root');// first we will select the root di
 
 customRender(reactElement, root);  // third here we are calling a function that we will make.
 
-
-
