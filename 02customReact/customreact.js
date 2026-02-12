@@ -19,7 +19,7 @@ function customRender(reactElement, root){  // here we defined the function
 const reactElement = { // second we will create a element information as in react we need a info of a element that we are rendering
     // we define a object and give info in it.
     type: 'a', // we define the type of element eg. p, a, div ... 
-    props: {  // we are definig the properties of the element.
+    props: {  // we are definig the properties of the element. 
         href: "https://google.com", // attributes of element
         target: '_blank'            // attributes of element
     },
